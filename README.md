@@ -1,4 +1,5 @@
-📄 CV / Portfólio Web
+# 📄 CV / Portfólio Web
+
 Este projeto é um modelo simples e responsivo de um Currículo / Portfólio online, desenvolvido com tecnologias web básicas: HTML, CSS e JavaScript.
 
 ✨ Descrição
