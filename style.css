@@ -1,0 +1,265 @@
+
+/* Corpo geral */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  color: #333;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Header com imagem de fundo */
+header {
+  background-image: url('./Assets/image/137965509_b3da90ee-cec3-4798-b9f3-11fb529009e0.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255);
+  padding: 4rem;
+  position: relative; 
+  font-size: 20px;
+}
+
+/* Conteúdo interno do header */
+#header-content {
+  background-color: rgba(19, 17, 17, 0.8); 
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 800px;
+} 
+
+.subheading a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Foto de perfil */
+.profile-photo {
+  position: absolute;
+  top: 25%;
+  right: 15rem;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: lab(32.99% -17.64 -12.67 / 0.9);
+  padding: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  image-rendering: auto;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #f8f8f8;
+  padding: 10px 0;
+  box-shadow: 0 5px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  gap: 20px;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+}
+
+#sobre-mim ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4b4f56; /* cor escura */
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background-color: #0077b5; /* cor azul para hover (ex: LinkedIn) */
+  transform: scale(1.1);
+}
+
+/* Container e base das habilidades */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.skill {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  color: white;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Cores específicas para cada habilidade */
+.skill-powerbi       { background-color: #f2c811; color: #000; }
+.skill-sql           { background-color: #336791; }
+.skill-python        { background-color: #3776ab; }
+.skill-excel         { background-color: #217346; }
+.skill-modelagem     { background-color: #8e44ad; }
+.skill-logica        { background-color: #e67e22; }
+.skill-powerapps     { background-color: #742774; }
+.skill-powerautomate { background-color: #0066cc; }
+.skill-sharepoint    { background-color: #0078d4; }
+.skill-sheets        { background-color: #0f9d58; }
+
+
+/* Seções genéricas (Experiências, Habilidades, etc.) */
+section {
+  padding: 3rem 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+section h2 {
+  font-size: 29px;
+  color: rgba(2, 86, 97, 0.9);
+  margin-bottom: 1rem;
+}
+
+/* Container principal do carrossel */
+.carousel-section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.carousel {
+  position: relative;
+  max-width: 1400px; /* ajustado ao tamanho da imagem */
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.carousel .carousel-slide {
+  list-style: none;
+  padding-left: 0; /* corrigido */
+  margin-left: 0;
+}
+
+.carousel-track-container {
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  padding: 0;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Aqui está o ajuste principal */
+.carousel-slide img {
+  width: 100%;
+  max-height: 500px; /* <= você pode ajustar esse valor para menor ou maior */
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  border-radius: 0;
+}
+
+
+.carousel-slide p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 20px; /* Adiciona espaçamento interno geral */
+  background-color:rgba(2, 86, 97, 0.9); /* Coloque a cor que você está usando, se houver */
+  border-radius: 10px; /* Opcional, só para suavizar o visual */
+  color: #ffffff;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background-color: rgba(0,0,0,0.3);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(0,0,0,0.6);
+}
+
+.carousel-btn.prev {
+  left: -29px;
+}
+
+.carousel-btn.next {
+  right: -29px;
+}
