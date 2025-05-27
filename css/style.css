@@ -19,37 +19,25 @@ body {
   transform: translateY(0);
 }
 
+/* Header com imagem de fundo */
 header {
+  background-image: url('./Assets/image/137965509_b3da90ee-cec3-4798-b9f3-11fb529009e0.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: rgb(255, 255, 255);
   padding: 4rem;
-  position: relative;
+  position: relative; 
   font-size: 20px;
-  overflow: hidden; /* Garante que a imagem não ultrapasse */
 }
 
-/* Faz a imagem agir como background */
-header img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-/* Conteúdo interno */
+/* Conteúdo interno do header */
 #header-content {
-  background-color: rgba(19, 17, 17, 0.8);
+  background-color: rgba(19, 17, 17, 0.8); 
   padding: 2rem;
   border-radius: 1rem;
   max-width: 800px;
-  position: relative; /* Garante que fique acima da imagem */
-  z-index: 1; /* Segurança para estar na frente */
-}
+} 
 
 .subheading a {
   color: white;
