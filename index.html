@@ -13,26 +13,31 @@
 <body>
   <header>
     <div id="header-content">
-      <h1 class="mb-0">
-        Raphael Souza <span class="text-primary">Pinheiro</span>
-      </h1>
-      <p>Estudante de Ciência da Computação | Análise de Dados | Power BI | SQL | Python | Automação</p>
-      
-      <div class="subheading mb-5">
-        Rua Pátaro Machado · Lauro de Freitas, Centro · (71) 99381-0550 ·
-        <a href="mailto:raphaelspinheiro@hotmail.com">raphaelspinheiro@hotmail.com</a>
-      </div>
-      
       <div class="profile-photo">
         <img src="./Assets/image/foto_editada_200x300.png" alt="Foto de Raphael">
+      </div>
+
+      <div class="header-text">
+        <h1 class="mb-0">
+          Raphael Souza <span class="text-primary">Pinheiro</span>
+        </h1>
+        <p>Estudante de Ciência da Computação | Análise de Dados | Power BI | SQL | Python | Automação</p>
+        
+        <div class="subheading mb-5">
+          Rua Pátaro Machado · Lauro de Freitas, Centro · (71) 99381-0550 ·
+          <a href="mailto:raphaelspinheiro@hotmail.com">raphaelspinheiro@hotmail.com</a>
+        </div>
       </div>
     </div>
   </header>
 
 
-  <!-- Barra de navegação -->
+  <!-- Navbar -->
   <nav class="navbar">
-    <ul>
+    <div class="menu-icon" onclick="toggleMenu()">
+      &#9776;
+    </div>
+    <ul class="nav-links" id="navLinks">
       <li><a href="#header-content">Home</a></li>
       <li><a href="#sobre-mim">Sobre Mim</a></li>
       <li><a href="#formação">Formação</a></li>
@@ -42,7 +47,12 @@
       <li><a href="#projetos">Projetos</a></li>
     </ul>
   </nav>
-
+  <script>
+  function toggleMenu() {
+    const navLinks = document.getElementById('navLinks');
+    navLinks.classList.toggle('show');
+  }
+  </script>
   <section id="sobre-mim" class="fade-in">
     <h2>🔍 Sobre Mim</h2>
     <p>
@@ -185,3 +195,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
