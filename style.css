@@ -234,10 +234,17 @@ section {
 }
 
 section h2 {
-  font-size: 29px;
+  font-size: 32px;
   color: rgba(2, 86, 97, 0.9);
   margin-bottom: 1rem;
 }
+
+section h3 {
+  font-size: 22px;
+  font-weight: bold;
+
+}
+
 
 /* Container principal do carrossel */
 .carousel-section {
