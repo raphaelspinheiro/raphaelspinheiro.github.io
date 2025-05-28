@@ -21,42 +21,43 @@ body {
 
 /* Header com imagem de fundo */
 header {
-  background-image: url('./Assets/image/137965509_b3da90ee-cec3-4798-b9f3-11fb529009e0.jpg'); 
+  background-image: url('./Assets/image/137965509_b3da90ee-cec3-4798-b9f3-11fb529009e0.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: rgb(255, 255, 255);
+  color: white;
   padding: 4rem;
-  position: relative; 
-  font-size: 20px;
+  display: flex;
+  justify-content: center;
 }
 
-/* Conteúdo interno do header */
+/* Container que envolve tudo */
 #header-content {
-  background-color: rgba(19, 17, 17, 0.8); 
+  background-color: rgba(19, 17, 17, 0.85);
   padding: 2rem;
   border-radius: 1rem;
-  max-width: 800px;
-} 
+  max-width: 1200px;  /* Aumentei de 1000px para 1200px */
+  width: 90%;         /* Garante que ocupa 90% da tela */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
 
-.subheading a {
-  color: white;
-  text-decoration: underline;
+/* Texto */
+.header-text {
+  flex: 1;
 }
 
 /* Foto de perfil */
 .profile-photo {
-  position: absolute;
-  top: 25%;
-  right: 15rem;
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: lab(32.99% -17.64 -12.67 / 0.9);
-  padding: 2px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background: rgba(50, 50, 50, 0.9);
+  padding: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   box-sizing: border-box;
-  image-rendering: auto;
 }
 
 .profile-photo img {
@@ -67,22 +68,49 @@ header {
   display: block;
 }
 
-/* Navbar */
+/* Link do email */
+.subheading a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* 🔥 Responsividade */
+@media (max-width: 768px) {
+  #header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+/* Navbar padrão */
 .navbar {
   background-color: #f8f8f8;
-  padding: 10px 0;
+  padding: 10px 30px;
   box-shadow: 0 5px 6px rgba(0,0,0,0.1);
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
 .navbar ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
-  display: inline-flex;
+  display: flex;
   gap: 20px;
 }
 
@@ -93,7 +121,7 @@ header {
 .navbar a {
   text-decoration: none;
   font-weight: 500;
-  color: #000000;
+  color: #000;
   font-family: 'Poppins', sans-serif;
   font-size: 17px;
   padding: 8px 16px;
@@ -103,6 +131,36 @@ header {
 
 .navbar a:hover {
   background-color: #ddd;
+}
+
+/* Menu hamburguer (escondido no desktop) */
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #f8f8f8;
+    box-shadow: 0 5px 6px rgba(0,0,0,0.1);
+    padding: 20px 0;
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
 }
 
 #sobre-mim ul {
