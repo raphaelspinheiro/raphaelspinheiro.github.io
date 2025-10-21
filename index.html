@@ -1,307 +1,674 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Meu Portfólio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.cdnfonts.com/css/munich" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Pessoal | Raphael</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <div id="header-content">
-      <div class="profile-photo">
-        <img src="./Assets/image/1742999340484 (1).jpg" alt="Foto de Raphael">
-      </div>
 
-      <div class="header-text">
-        <h1 class="mb-0">
-          Raphael Souza <span class="text-primary">Pinheiro</span>
-        </h1>
-        <p>Data Analytics | Power BI | DAX | SQL | Python | Automação de Processos | Selenium | Excel |</p>
-        
-        <div class="subheading mb-5">
-          Salvador - Bahia · (71) 99381-0550 ·
-          <a href="mailto:raphaelspinheiro@hotmail.com">raphaelspinheiro@hotmail.com</a>
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/Raphael_perfil.jpeg" alt="Raphael" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Raphael Pinheiro">Raphael Pinheiro</h1>
+
+          <p class="title">Analista de Dados</p>
         </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
       </div>
-    </div>
-  </header>
 
+      <div class="sidebar-info_more">
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="menu-icon" onclick="toggleMenu()">
-      &#9776;
-    </div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#header-content">Home</a></li>
-      <li><a href="#sobre-mim">Sobre Mim</a></li>
-      <li><a href="#formação">Formação</a></li>
-      <li><a href="#certificados">Certificados</a></li>
-      <li><a href="#experiencias">Experiências</a></li>
-      <li><a href="#habilidades">Habilidades</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-    </ul>
-  </nav>
-  <script>
-  function toggleMenu() {
-    const navLinks = document.getElementById('navLinks');
-    navLinks.classList.toggle('show');
-  }
-  </script>
-  <section id="sobre-mim" class="fade-in">
-    <h2>🔍 Sobre Mim</h2>
-    <p>
-      Graduando em Ciência e Engenharia da Computação com experiência prática em análise de dados, automação de processos e visualização interativa com Power BI.
-      Desenvolvo projetos com impacto mensurável de produtividade, redução de erros e suporte
-      à tomada de decisão gerencial. Atuo com ferramentas como Python, Power BI, DAX,
-      SQL, Power Apps e SharePoint, com foco em indicadores de performance (KPIs) e
-      eficiência operacional. 
-      Busco oportunidades em ambientes orientados a dados, onde
-      possa unir tecnologia e impacto de negócio
-    </p>
-    <p>
-      Ao longo da minha formação, participei de projetos acadêmicos e pessoais focados em transformar dados em informações úteis, 
-      utilizando dashboards, ETL e integração com diversas fontes de dados.
-    </p>
+        <div class="separator"></div>
 
-    <div class="social-icons">
-      <a class="social-icon" href="https://www.linkedin.com/in/raphael-pinheiro-b3062724b" target="_blank">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-      <a class="social-icon" href="https://github.com/raphaelspinheiro" target="_blank">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
+        <ul class="contacts-list">
 
-  </section>
+          <li class="contact-item">
 
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
 
-  <section id="formação" class="fade-in">
-    <h2>🎓 Formação Acadêmica</h2>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
 
-    <h3>Graduando em Ciência da Computação – UNIFACS – Salvador, BA</h3>
-    <p><strong>🗓️ Julho 2022 a Data atual</strong></p>
-    <p>
-      Atualmente curso Ciência da Computação na UNIFACS, com foco em áreas como análise de dados, desenvolvimento de software, algoritmos e estruturas de dados, buscando uma formação sólida em fundamentos teóricos e práticos da computação.
-    </p>
+              <a href="mailto:richard@example.com" class="contact-link">raphaelspinheiro@hotmail.com</a>
+            </div>
 
-    <h3>Graduando em Engenharia da Computação – Universidade Federal da Bahia – Salvador, BA</h3>
-    <p><strong>🗓️ Janeiro 2020 a Data atual</strong></p>
-    <p>
-      Estudante de Engenharia da Computação na UFBA, com formação voltada para hardware, sistemas embarcados, arquitetura de computadores e integração entre software e hardware. A formação também abrange disciplinas de matemática, física e engenharia, aliadas ao desenvolvimento tecnológico.
-    </p>
-  </section>
-
-  <section id="certificados" class="fade-in">
-    <h2>✔️ Certificados</h2>
-    <ul class="certificados-lista">
-      <li>
-        🏆 Full Stack – Infinity School
-        <a href="./Assets/PDF/CERTIFICADO_Dev_Raphael Souza Pinheiro.pdf" target="_blank">(View)</a>
-      </li>
-      <li>
-        🏆 Carta de Recomendação
-        <a href="./Assets/PDF/CARTA_DEV- Raphael Souza Pinheiro.pdf" target="_blank">(View)</a>
-      </li>
-      <li>
-        🏆 Power BI – SENAI
-        <a href="LINK_DO_CERTIFICADO" target="_blank"></a>
-      </li>
-      <li>
-        🏆 Selenium – Udemy
-        <a href="LINK_DO_CERTIFICADO" target="_blank"></a>
-      </li>
-      <li>
-        🏆 Machine Learning - USP / DATA ICMC
-        <a href="LINK_DO_CERTIFICADO" target="_blank"></a>
-      </li>
-    </ul>
-  </section>
-
-  <section id="experiencias" class="fade-in">
-    <h2>🏫 Experiências</h2>
-  
-    <h3>Estagiário em análise de Dados | Python, Power BI, DAX – Néos – Salvador, BA</h3>
-    <p><strong>🗓️ Novembro 2024 a Junho 2025</strong></p>
-    <div>
-      <h4>Tecnologias</h4>
-      <p>
-        Python (Selenium, Pandas), Power BI, DAX, Power Apps, Power Automate, SharePoint, Excel (Avançado).
-      </p>
-
-      <h4>Principais Atividades</h4>
-        <ul>
-          
-          <li style="margin-bottom: 15px;">
-            <strong>Automatização de Processos:</strong> Desenvolvimento de automação utilizando Python (Selenium, Pandas) que reduziu o tempo de elaboração de relatórios de 2 dias para apenas 15 minutos, representando uma redução de 99,48% no tempo de execução. Essa solução eliminou tarefas manuais, aumentou significativamente a produtividade da equipe e trouxe maior eficiência operacional.          </li>
-
-          <li style="margin-bottom: 15px;">
-            <strong>Análise e Manipulação de Dados (ETL):</strong> Extração, transformação e carga de dados (ETL) de diferentes fontes, estruturando informações para análises consistentes e apoio à tomada de decisão.
           </li>
 
-          <li style="margin-bottom: 15px;">
-            <strong>Desenvolvimento de Dashboards:</strong> Criação e manutenção de dashboards interativos no Power BI, utilizando DAX para métricas e KPIs que fornecem visibilidade em tempo real sobre indicadores de performance e aderência às normas de Compliance.
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">(71) 993810550</a>
+            </div>
+
           </li>
 
-          <li style="margin-bottom: 15px;">
-            <strong>Soluções em Low-Code:</strong> Desenvolvimento de aplicações e automações nas plataformas da Microsoft (Power Apps, Power Automate e SharePoint), otimizando fluxos de trabalho e centralizando informações críticas para o setor.
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Nascimento</p>
+
+              <time datetime="1982-06-23">05 de Abril de 2001</time>
+            </div>
+
           </li>
 
-          <li style="margin-bottom: 15px;">
-            <strong>Geração de Insights Estratégicos:</strong> Apoio a análises estratégicas por meio de dados, contribuindo com informações que suportam decisões gerenciais e melhoram a governança interna.
-          </li>
-
-          <li style="margin-bottom: 15px;">
-            <strong>Foco em Compliance e Governança:</strong> Atuação alinhada às diretrizes de Compliance, aplicando tecnologia para garantir aderência a processos, mitigação de riscos e melhoria contínua dos controles internos.
-          </li>
         </ul>
-    </div>
-  
-    <h3>Estagiário em Ciência de Dados | Governança de TI – Tribunal de Justiça da Bahia – Salvador, BA</h3>
-    <p><strong>🗓️ Janeiro 2023 a Novembro 2024</strong></p>
-    <style>
-      ul.atividades li {
-        margin-bottom: 15px;
-      }
-    </style>
 
-    <div>
-      <h4>Tecnologias Utilizadas</h4>
-      <p>
-        Python (Selenium, Pandas), Power BI, DAX, Power Apps, Power Automate, SharePoint, JavaScript, HTML, CSS, Excel (Avançado), PowerPoint.
-      </p>
+        <div class="separator"></div>
 
-      <h4>Principais Atividades</h4>
-      <ul class="atividades">
-          <li>
-            <strong>Automação de Processos:</strong> Desenvolvimento de robôs e scripts em Python (Selenium) para automatizar tarefas repetitivas e operacionais, reduzindo significativamente o tempo de execução e erros manuais.
-          </li>
+        <ul class="social-list">
 
-          <li>
-            <strong>Tratamento de Dados:</strong> Coleta, limpeza, transformação e organização de dados, garantindo maior qualidade nas informações utilizadas pelos setores para análise e tomada de decisão.
-          </li>
-
-          <li>
-            <strong>Desenvolvimento de Dashboards:</strong> Criação de dashboards interativos no Power BI, aplicando DAX para construção de KPIs e métricas que forneceram insights relevantes para a Governança de TI e outras áreas da organização.
-          </li>
-
-          <li>
-            <strong>Soluções em Low-Code:</strong> Desenvolvimento de aplicações e fluxos automatizados nas plataformas Power Apps, Power Automate e SharePoint, otimizando processos internos, facilitando a troca de informações e aumentando a produtividade das equipes.
-          </li>
-
-          <li>
-            <strong>Desenvolvimento Front-End:</strong> Desenvolvimento de interfaces web responsivas e intuitivas utilizando JavaScript, HTML e CSS, contribuindo para soluções internas que melhoraram a experiência dos usuários.
-          </li>
-
-          <li>
-            <strong>Apresentações Estratégicas:</strong> Produção de materiais visuais e apresentações executivas no PowerPoint, auxiliando na comunicação dos resultados, projetos e métricas para os gestores e stakeholders.
-          </li>
-      </ul>
-    </div>
-
-  
-    <h3>Analista  de Testes (QA) Freelancer – PROJEK – Salvador, BA</h3>
-    <p><strong>🗓️ Agosto 2023 a Novembro 2023</strong></p>
-    <style>
-      ul.atividades li {
-        margin-bottom: 15px;
-      }
-    </style>
-
-    <div>
-      <h4>Tecnologias Utilizadas</h4>
-      <p>
-        TestLink, Selenium.
-      </p>
-
-      <h4>Principais Atividades</h4>
-      <ul class="atividades">
-          <li>
-            <strong>Execução de Testes:</strong> Realização de testes funcionais, de integração e de usabilidade, garantindo que os sistemas estivessem alinhados aos requisitos do negócio e livres de falhas.
-          </li>
-
-          <li>
-            <strong>Garantia da Qualidade:</strong> Atuação direta na identificação, registro e acompanhamento de bugs e não conformidades, contribuindo para a entrega de softwares mais robustos e com alta qualidade.
-          </li>
-
-          <li>
-            <strong>Colaboração com Desenvolvimento:</strong> Trabalho colaborativo com a equipe de desenvolvimento, propondo melhorias, validando correções e garantindo que os problemas fossem solucionados de forma ágil e eficiente.
-          </li>
-
-          <li>
-            <strong>Foco na Experiência do Usuário:</strong> Condução de testes de usabilidade, contribuindo para a entrega de soluções que proporcionam uma melhor experiência aos usuários finais.
-          </li>
-
-          <li>
-            <strong>Aprimoramento Contínuo:</strong> Análise dos processos de teste, sugerindo melhorias nas metodologias e na documentação, elevando o padrão de qualidade dos projetos.
-          </li>
-      </ul>
-    </div>
-
-  </section>
-  
-
-  <section id="habilidades" class="fade-in">
-    <h2>🛠️ Habilidades</h2>
-    <div class="skills-container">
-      <span class="skill skill-powerbi">Power BI</span>
-      <span class="skill skill-sql">SQL</span>
-      <span class="skill skill-excel">Excel Avançado</span>
-      <span class="skill skill-sheets">Google Sheets</span>
-      <span class="skill skill-modelagem">Modelagem de Dados</span>
-      
-      <span class="skill skill-python">Python (Automação e Análise de Dados)</span>
-      <span class="skill skill-powerautomate">Power Automate</span>
-      
-      <span class="skill skill-powerapps">Power Apps</span>
-      <span class="skill skill-sharepoint">SharePoint</span>
-      
-      <span class="skill skill-logica">Lógica de Programação</span>
-    </div>
-  </section>
-  
-  
-
-  <section id="projetos" class="carousel-section fade-in">
-    <h2>📊 Meus Projetos</h2>
-    <h3>Todos os Projetos estão no github</h3>
-    <div class="carousel">
-      <button class="carousel-btn prev">&#10094;</button>
-      <div class="carousel-track-container">
-        <ul class="carousel-track">
-          <li class="carousel-slide">
-            <a href="https://app.powerbi.com/view?r=eyJrIjoiYTIxN2MxODAtMzdjZi00YWNhLWJkNTYtMmUwYTk4OGVjYzEyIiwidCI6ImVmODdlZjQ5LTBhOGUtNGQxNS05YTQyLWRkMWFhYmUzM2U5MSJ9" target="_blank">
-              <img src="./Assets/image/Dashboard_vendas.png" alt="Projeto 1">
+          <li class="social-item">
+            <a href="https://github.com/raphaelspinheiro" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
             </a>
-            <p>Este projeto apresenta um dashboard interativo desenvolvido no Power BI com base em dados fictícios de vendas. O objetivo é demonstrar habilidades em análise de dados, modelagem e visualização por meio de indicadores como faturamento, lucro, ticket médio, margem de lucro e ranking de produtos. O painel permite explorar o desempenho por produto, categoria, marca, região e cliente, utilizando medidas DAX personalizadas para enriquecer as análises e facilitar a tomada de decisão.</p>
           </li>
-          <li class="carousel-slide">
-            <a href="https://app.powerbi.com/view?r=eyJrIjoiZjNhN2Q3Y2EtM2E4Yi00NWFlLWExOTEtZjZlYmRmNDA4OGQwIiwidCI6ImVmODdlZjQ5LTBhOGUtNGQxNS05YTQyLWRkMWFhYmUzM2U5MSJ9" target="_blank">
-              <img src="./Assets/image/Moedas Mundiais.png" alt="Projeto 2">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/raphael-pinheiro-b3062724b" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
             </a>
-            <p>Este projeto automatiza a coleta diária das cotações de moedas estrangeiras, processa os dados em Excel e os visualiza em um dashboard no Power BI. Utiliza Python, Selenium para coleta de dados, Pandas para tratamento, OpenPyXL para atualizar o Excel, e Power BI para visualização interativa.</p>
           </li>
-          <li class="carousel-slide">
-            <a href="https://github.com/raphaelspinheiro/Analise-Hotel" target="_blank">
-              <img src="./Assets/image/ChatGPT Image 27 de mai. de 2025, 11_00_36.png" alt="Projeto 3">
-            </a>
-            <p>Projeto de análise de dados do setor hoteleiro desenvolvido com Python, utilizando bibliotecas como Pandas, Matplotlib e Seaborn. O objetivo foi explorar dados fictícios de hóspedes e reservas para gerar insights relevantes, como o tipo de quarto mais reservado, o quarto que gera maior faturamento, o perfil dos hóspedes (idade e gênero), o tempo médio de estadia e a evolução do faturamento ao longo do tempo. As análises envolveram limpeza, tratamento, exploração dos dados e criação de visualizações para apoiar a tomada de decisões e interpretação dos resultados.</p>
-          </li>
+
         </ul>
+
       </div>
-      <button class="carousel-btn next">&#10095;</button>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Sobre</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Curriculo</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projetos</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Certificados</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contato</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--
+        - #SOBRE
+      -->
+
+      <article class="about  active" data-page="sobre">
+
+        <header>
+          <h2 class="h2 article-title">Sobre Mim</h2>
+        </header>
+
+        
+        <section class="about-text">
+          <p>
+            Graduando em Ciência e Engenharia da Computação com experiência prática em análise de dados, automação de processos e visualização interativa com Power BI. Desenvolvo projetos com impacto mensurável de produtividade, redução de erros e suporte à tomada de decisão gerencial. Atuo com ferramentas como Python, Power BI, DAX, SQL, Power Apps e SharePoint, com foco em indicadores de performance (KPIs) e eficiência operacional. Busco oportunidades em ambientes orientados a dados, onde possa unir tecnologia e impacto de negócio.
+          </p>
+        </section>
+
+         
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">O que eu faço?</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.png
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Automação de Processos</h4>
+
+                <p class="service-item-text">
+                  Automatização inteligente para otimizar tarefas repetitivas, aumentar a eficiência e reduzir erros operacionais.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+            <div class="service-icon-box">
+              <img src="./assets/images/icon-dev.png" alt="Dashboard icon" width="40">
+            </div>
+
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Dashboards e BI</h4>
+
+              <p class="service-item-text">
+                Criação de dashboards interativos e relatórios dinâmicos com Power BI, transformando dados em decisões estratégicas.
+              </p>
+            </div>
+
+          </li>
+
+          <li class="service-item">
+
+            <div class="service-icon-box">
+              <img src="./assets/images/icon-app.png" alt="Automation icon" width="40">
+            </div>
+
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Análise de Dados</h4>
+
+              <p class="service-item-text">
+                Tratamento, visualização e interpretação de dados com Python, SQL, Excel e Power BI para gerar insights e apoiar decisões.
+              </p>
+            </div>
+
+          </li>
+
+          <li class="service-item">
+
+            <div class="service-icon-box">
+              <img src="./assets/images/icon-ux-ui.png" alt="Power Platform icon" width="40">
+            </div>
+
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Power Platform</h4>
+
+              <p class="service-item-text">
+                Criação de soluções com Power Apps, Power Automate e SharePoint para digitalizar processos e melhorar a gestão interna.
+              </p>
+            </div>
+
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Raphael Pinheiro" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Raphael Pinheiro</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="curriculo">
+
+        <header>
+          <h2 class="h2 article-title">Curriculo</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Formação</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Ciência da Computação - UNIFACS</h4>
+              <span>Julho 2022 — Atual</span>
+              <p class="timeline-text">
+                Foco em áreas como análise de dados, desenvolvimento de software, algoritmos e estruturas de dados, buscando uma formação sólida em fundamentos teóricos e práticos da computação.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Engenharia da Computação - Universidade Federal da Bahia</h4>
+              <span>Janeiro 2020 — Atual</span>
+              <p class="timeline-text">
+                Formação voltada para hardware, sistemas embarcados, arquitetura de computadores e integração entre software e hardware, aliando disciplinas de matemática, física e engenharia ao desenvolvimento tecnológico.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experiência</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Estagiário em Análise de Dados – Néos</h4>
+              <span>Novembro 2024 — Atual</span>
+              <p class="timeline-text">
+                Desenvolvimento de automações em Python (Selenium, Pandas), reduzindo processos de geração de relatórios de 2 dias para 15 minutos. Criação de dashboards interativos no Power BI com DAX, focados em KPIs de compliance, metas e resultados operacionais. Apoio em processos de ETL, modelagem de dados e extração de insights gerenciais para suporte à tomada de decisão. Participação em apresentações executivas e elaboração de relatórios analíticos para a liderança. Desenvolvimento de soluções low-code com Power Apps e Power Automate para integração e agilidade entre áreas.
+
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Estagiário em Ciência de Dados – Tribunal de Justiça da Bahia</h4>
+              <span>Janeiro 2023 — Novembro 2024</span>
+              <p class="timeline-text">
+                Automação de rotinas com Python e SQL, otimizando tarefas administrativas e mitigando erros manuais. Criação de dashboards em Power BI com indicadores estratégicos para Governança de TI e áreas administrativas. Desenvolvimento de aplicativos com Power Apps para facilitar a comunicação entre setores. Apoio a Juízes, Promotores e Diretoria de Segurança da Informação, com apresentações executivas em PowerPoint. Colaboração com times de governança e segurança da informação em iniciativas de dados institucionais.
+
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Analista de Testes (QA) – PROJEK</h4>
+              <span>Agosto 2023 — Novembro 2023</span>
+              <p class="timeline-text">
+                Execução de testes funcionais e de usabilidade em sistemas web e mobile, com foco na experiência do usuário. Identificação e documentação de bugs, garantindo a qualidade e performance dos sistemas antes da entrega. Colaboração direta com desenvolvedores para correções ágeis e melhoria contínua dos produtos.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Tecnologias</h3>
+
+          <ul class="skills-list content-card">
+
+<li class="skills-item">
+  <div class="title-wrapper"><h5 class="h5">Power BI</h5><data value="90">90%</data></div>
+  <div class="skill-progress-bg"><div class="skill-progress-fill" style="width: 90%;"></div></div>
+</li>
+<li class="skills-item">
+  <div class="title-wrapper"><h5 class="h5">Excel Avançado</h5><data value="90">90%</data></div>
+  <div class="skill-progress-bg"><div class="skill-progress-fill" style="width: 90%;"></div></div>
+</li>
+<li class="skills-item">
+  <div class="title-wrapper"><h5 class="h5">Python</h5><data value="85">85%</data></div>
+  <div class="skill-progress-bg"><div class="skill-progress-fill" style="width: 85%;"></div></div>
+</li>
+<li class="skills-item">
+  <div class="title-wrapper"><h5 class="h5">Selenium</h5><data value="80">80%</data></div>
+  <div class="skill-progress-bg"><div class="skill-progress-fill" style="width: 80%;"></div></div>
+</li>
+<li class="skills-item">
+  <div class="title-wrapper"><h5 class="h5">ETL</h5><data value="80">80%</data></div>
+  <div class="skill-progress-bg"><div class="skill-progress-fill" style="width: 80%;"></div></div>
+</li>
+<li class="skills-item">
+  <div class="title-wrapper"><h5 class="h5">Power Automate</h5><data value="80">80%</data></div>
+  <div class="skill-progress-bg"><div class="skill-progress-fill" style="width: 80%;"></div></div>
+</li>
+<li class="skills-item">
+  <div class="title-wrapper"><h5 class="h5">Power Apps</h5><data value="75">75%</data></div>
+  <div class="skill-progress-bg"><div class="skill-progress-fill" style="width: 75%;"></div></div>
+</li>
+<li class="skills-item">
+  <div class="title-wrapper"><h5 class="h5">SQL</h5><data value="60">60%</data></div>
+  <div class="skill-progress-bg"><div class="skill-progress-fill" style="width: 60%;"></div></div>
+</li>
+<li class="skills-item">
+  <div class="title-wrapper"><h5 class="h5">HTML</h5><data value="55">55%</data></div>
+  <div class="skill-progress-bg"><div class="skill-progress-fill" style="width: 55%;"></div></div>
+</li>
+<li class="skills-item">
+  <div class="title-wrapper"><h5 class="h5">CSS</h5><data value="55">55%</data></div>
+  <div class="skill-progress-bg"><div class="skill-progress-fill" style="width: 55%;"></div></div>
+</li>
+<li class="skills-item">
+  <div class="title-wrapper"><h5 class="h5">JavaScript</h5><data value="40">40%</data></div>
+  <div class="skill-progress-bg"><div class="skill-progress-fill" style="width: 40%;"></div></div>
+</li>
+
+
+</ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="projetos">
+
+        <header>
+          <h2 class="h2 article-title">Projetos</h2>
+        </header>
+
+        <section class="projects">
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/raphaelspinheiro/Projeto-Relatorio-de-Vendas">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Relatório de Vendas.jpeg" alt="beconnect" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Relatório de Vendas</h3>
+
+                <p class="project-category">Projetos BI</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/raphaelspinheiro/Projeto-Moedas-Mundiais">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Projeto Moedas Mundiais.jpeg" alt="risoflow" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Projeto Moedas Mundiais</h3>
+
+                <p class="project-category">Projetos BI</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://github.com/raphaelspinheiro/Analise-Hotel">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Projeto Hotelaria.jpeg" alt="dtmoney" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Projeto Hotelaria</h3>
+
+                <p class="project-category">Projetos BI</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://github.com/raphaelspinheiro/CALENDARIO-GERENCIAL">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Cronograma Atividades Gerencial.jpeg" alt="dtmoney" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Cronograma Atividades Gerencial</h3>
+
+                <p class="project-category">Projetos BI</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <article class="resume" data-page="certificados">
+
+        <header>
+          <h2 class="h2 article-title">Certificados</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Itens
+            </h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                <a href="./assets/images/1756126530514.pdf" target="_blank" style="color: white;">Power BI – SENAI</a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                <a href="./assets/images/Machine Learning.jpeg" target="_blank" style="color: white;">Machine Learning - USP / DATA ICMC</a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                <a href="./assets/images/CERTIFICADO_Dev_Raphael Souza Pinheiro.pdf" target="_blank" style="color: white;">Full Stack Developer – Infinity School</a>
+              </h4>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                <a href="#" target="_blank" style="color: white;">Selenium – Udemy</a>
+              </h4>
+            </li>
+          </ol>
+
+
+
+        </section>
+
+        
+
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contato">
+
+        <header>
+          <h2 class="h2 article-title">Contato</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248901.97964495805!2d-38.58500576765024!3d-12.901713407725232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716112050422ebd%3A0xf71c84369573db9d!2sSalvador%2C%20BA!5e0!3m2!1spt-BR!2sbr!4v1738174766659!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0" loading="lazy" ></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Formulário</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Nome Completo" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="E-mail" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Sua mensagem" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Enviar mensagem</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
     </div>
-  </section>
 
+  </main>
 
-  <script src="script.js"></script>
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
-</html>
 
+</html>
 
 
